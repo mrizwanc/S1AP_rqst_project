@@ -27,7 +27,7 @@
 #include "per_decoder.h"  // For aper_decode()
 
 // Define MME IP and PORT (adjust as needed)
-#define MME_IP "192.168.0.102"
+#define MME_IP "192.168.220.9"
 #define MME_PORT 36412
 
 // Define PLMN and TAC

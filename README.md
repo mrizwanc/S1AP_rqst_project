@@ -13,7 +13,7 @@ Processes happen in the scripting file-
 - Compile the .asn file
 - Remove sample files generated from asn1c compilation
 - Compile all the generated files from .asn compilation
-- Compile main.c
+- Compile c files to run s1ap
 - Link all the object files and build the output file
 - Clean all the object files
 - Run the output file

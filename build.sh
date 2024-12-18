@@ -16,10 +16,11 @@ rm -rf "$ASN_DIR"/*example* "$ASN_DIR"/Makefile*
 gcc -I"$ASN_DIR" -c "$ASN_DIR"/*.c
 
 # Compile main.c
-gcc -I"$ASN_DIR" -c "$SRC_DIR"/s1SetupRqst.c
+gcc -I"$ASN_DIR" -c "$SRC_DIR"/*.c
 
 # Link all object files
 gcc -o $OUTPUT *.o -lsctp
+
 
 # Clean up object files
 rm *.o
@@ -34,6 +35,7 @@ echo -e "\n\n\t\t\tEnd Of The Program.\n\n\n"
 
 # Clean up output and ASN files
 rm $OUTPUT
+
 rm -rf "$ASN_DIR"/*
 
 
