@@ -1,11 +1,12 @@
 ## S1AP Request Project
 
-In this project I am trying to build S1AP requests and responses between MME and eNB.
+In this project I am trying to build S1AP messages between MME and eNB.
 
 ## Directory Structure
 - `asn/`: Contains ASN.1 definitions.
-- `src/`: Source files for the application.
 - `include/`: Header files and all the generated code from asn1c.
+- `src/`: Source files for the application.
+
 
 
 # Description of build.sh
@@ -17,5 +18,5 @@ Processes happen in the scripting file-
 - Link all the object files and build the output file
 - Clean all the object files
 - Run the output file
-- Clean the output file and all the asn1c generated files
+- Clean the output file
 
