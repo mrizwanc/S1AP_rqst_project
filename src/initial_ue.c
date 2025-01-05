@@ -225,4 +225,17 @@ void send_initial_ue_message(int sock) {
     // Cleanup
     free(encoded_buffer);
     ASN_STRUCT_FREE(asn_DEF_S1AP_PDU, pdu);
+
+
+    // After sending, let's try to receive the response
+    printf("Waiting for response...\n");
+
+
+    // Receive and process the S1AP message
+    if (receive_s1ap_message(sock) != 0) {
+        printf("Failed to receive or decode S1AP message.\n");
+        return;
+    }
+
+    printf("Received and decoded S1AP message successfully\n");
 }
