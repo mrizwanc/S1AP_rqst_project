@@ -14,6 +14,8 @@
 #include "asn_codecs.h"
 #include "S1AP-PDU.h"
 #include "InitiatingMessage.h"
+#include "SuccessfulOutcome.h"
+#include "UnsuccessfulOutcome.h"
 #include "InitialUEMessage.h"
 #include "S1SetupRequest.h"
 #include "Global-ENB-ID.h"
@@ -32,7 +34,7 @@
 #include "asn_application.h"
 #include "asn_internal.h"
 #include "per_encoder.h"
-#include "per_decoder.h"  // For aper_decode()
+#include "per_decoder.h"
 
 // Define constants
 #define MCC_MNC_BUF "\x00\xF1\x10" // MCC=001, MNC=01

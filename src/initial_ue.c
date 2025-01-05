@@ -237,5 +237,4 @@ void send_initial_ue_message(int sock) {
         return;
     }
 
-    printf("Received and decoded S1AP message successfully\n");
 }
